@@ -1,0 +1,217 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  color: #353535;
+  font-family: "Times New Roman", "Noto Sans KR", serif;
+  text-rendering: optimizeLegibility;
+  -wekit-font-smoothing: antialiased;
+ 
+ 
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ------------------------------------------------header */
+header {
+  position:fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;    
+}
+
+header > nav {
+  width: calc(100%/1.2);
+  /* 1600px */
+  height: 90px;
+  margin: 0 auto;
+  color:#353535;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  letter-spacing: 3%;
+}
+
+
+
+header .nav_link_section {
+  display: flex;
+  gap:60px;
+  font-family:"Noto Sans KR";
+}
+
+header .booK_link_section {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.reservation_bt {
+  padding: 14px 16px;
+  border: 1px solid #353535;
+  color: #353535;
+}
+
+
+section {
+  width: 100vw;
+  margin: 50px auto;
+}
+
+section img{
+  width: 100%;;
+}
+
+footer {
+  height: 100%;
+  background-color: #232323;
+}
+
+footer .content {
+  width: 75vw;   
+  margin: 0 auto;
+  color: #ADADAD;
+  font-family: "Noto Sans KR";
+  font-weight: 300;
+  font-size: 0.875rem;
+  padding:40px 0;
+
+}
+
+
+footer .footer_link_section {
+display: flex;
+gap: 18px;
+
+}
+
+footer .footer_mid .footer_info {
+  padding: 4px 0 10px 0;
+  border-bottom: 1px solid rgba(173, 173, 173, .5);
+  line-height: 50%;
+}
+
+.f_bar {
+  padding: 0 8px;
+}
+
+
+.footer_bot {
+  height: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  word-break: break-all;
+  line-height: 150%;
+
+ 
+}
+
+.footer_sns {
+  display: flex;
+  align-items: center;
+
+}
+
+.footer_sns img {
+  width: 60%;
+}
+
+
+
+.button_container span {
+  background:  #232323;
+  border: none;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+
+
+
+
+.mobile_view{
+  display: none !important;
+}
+
+@media only screen and (max-width:800px){
+ 
+  .mobile_view{
+      display: inherit !important;
+      /* inherit 현재 적용되어 있는  css 속성을 지우고 그다음 순서의 css 갑을 적용하겠다 */
+  }
+  .mobile_hidden{
+      display: none !important;
+  }
+
+  header > nav {
+      height: 70px;
+  }
+  
+  header nav > .logo_section img  {
+   width: 80%;
+  }
+
+  footer {
+      margin-top: 10.4vw;
+      height: 100%;
+      background-color: #232323;
+      font-size: 12px;
+  
+  }
+
+
+  footer .footer_mid .footer_info {
+      padding: 2px 0 6px 0;
+      line-height: 150%;
+      
+  }
+
+
+  .f_bar {
+      display: block;
+      color:#232323;
+      font-size: 4px;
+      line-height: 0;
+    
+  }
+
+  .footer_bot {
+
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap:20px;
+     
+  }
+
+  
+
+  
+
+
+
+
+
+}  
+
