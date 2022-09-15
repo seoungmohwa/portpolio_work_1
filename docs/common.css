@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    color: #353535;
+    color: #232323;
     font-family: "Times New Roman", "Noto Sans KR", serif;
     text-rendering: optimizeLegibility;
     -wekit-font-smoothing: antialiased;
@@ -27,7 +27,8 @@ body {
     position:fixed;
     width: 100%;
     top: 0;
-    z-index: 100;  
+    z-index: 100;
+     
   }
   
   .top-bar {
@@ -45,8 +46,10 @@ body {
 
   header .nav_link_section {
     display: flex;
-    gap:60px;
+    width: 662px;
+    justify-content: space-between;
     font-family:"Noto Sans KR";
+    
 }
 
 
@@ -73,6 +76,7 @@ header .booK_link_section ul {
 header.hover {
   color:var(--inverse-color, #232323);
   background-color: #232323;
+  height: 80px;
   }
 
 /* -------------------------------------------------메인 페이지 */
@@ -80,39 +84,35 @@ header.hover {
    z-index: -100;
 }
 
-.main_section img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .main_section .main_title_section{
-    width: 82.5vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    position: absolute;
-    top: 20vw;
-    left: 8.333vw;
-    z-index: 10;
-
-
+  width: 82.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  top: 20vw;
+  left: 8.333vw;
+  z-index: 10;
 }
 
+
 .main_section .main_title_section .main_title {
-   font-size: 2.5rem;
-   line-height: 110%;
+   font-size: 3rem;
+   line-height: 100%;
    letter-spacing: 4%;
+   text-align: center;
+   margin-left: -50px;
    
 }
 
 .main_section .main_title_section .sub_title {
     display: block;
     font-size: 1rem;
-    line-height: 160%;
-    font-weight: 300;
+    line-height: 300%;
+    font-weight: 100;
+    
  }
 
  .main_section .serch_section {
@@ -226,6 +226,7 @@ header.hover {
  /* ------------------------------------------------content */  
  .wapper {
     width: 75vw;
+    /* 1440px */
     margin: 0 auto;
     overflow: hidden;
     word-break: break-all;
@@ -233,7 +234,9 @@ header.hover {
  }
 
   .con {
-    padding-top: 10.4vw;
+    padding-top: 9.8vw;
+    /* 140px */
+  
  }
 
  .wapper img{
@@ -242,45 +245,49 @@ header.hover {
 
  .wapper .book_bt a {
     display: inline-block;
-    padding: 4px 20px;
-    border: 1px solid #353535;
-    letter-spacing: 1.4%;
-    font-weight: 300;
+    padding: 8px 34px 6px 34px;
+    text-align: center;
+    background-color: #232323;
+    color: #fff;
+    letter-spacing: 6%;
+    font-weight: 300; 
 }
 
 .wapper .book_bt a:hover {
-  background-color: #232323;
-  color: #fff;
+  background-color: transparent;
+  border: 1px solid #232323;
+  color: #232323;
 }
-
 
 .wapper .title_section {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-grow: 1;
+  width: 100%;
+  
 }
+
 .wapper .title {
+    width: 100%;
+    text-align: center;
     font-size: 3rem;
+    padding-bottom: 25px;
+
  }
 
- .wapper .bt_section {
-    font-family:"Noto Sans KR";
-    display: inline-block;
+ .bt_section {
+    font-family:"Noto Sans KR";  
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
     padding-bottom: 8px;
-  
  }
 
  .wapper .desc {
-    margin: 10px 0 20px 0;
-
+    margin: 16px 0 32px 0;
+    font-weight: 300;
 }
 
 .wapper .desc .desc_title {
     font-size: 1.5rem;
-    font-weight: 400;
-    padding-top: 2px;
+    padding-bottom: 24px;
  }
 
 .wapper .desc span {
@@ -290,46 +297,90 @@ header.hover {
    
  }
 
+.promotion_section {
+  /* padding-bottom: 14vw; */
+  /* 200px */
+
+}
 
 .promotion_section .content {
     display: flex;
     gap:30px;
-   
 }
+
+
 
  .promotion_section .desc span:nth-child(2) {
     letter-spacing: 0.045em;
  }
 
 
+ .dining_section{
+  text-align: center;
+  padding-bottom: 102px;
+ }
+
 .dining_section .content {
     display: flex;
-    gap:20px;
+    gap:30px;
 }
+
+.dining_section .title {
+  padding-bottom: 56px;
+}
+
+.dining_section .title_section >.desc {
+  width:80%;
+  /* 702px */
+  display: inline-block;
+  padding: 40px 0 48px 0;
+  margin: 0;
+  word-break: break-all;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 160%;
+}
+
+.dining_section .content .item {
+  width: 100%;
+  position: relative;
+}
+
+.dining_section .content img {
+  width: 96%;
+}
+
+.dining_section .content .item > .desc_title {
+  position: absolute;
+  top:90%;
+  /* 416px */
+  left: 4%;
+  font-size: 1.25vw;
+  font-weight: 600;
+  color:#fff;
+} 
+
 
   
-.dining_section .tab-menu {
-  width: 310px;
+
+
+.facilities_section {
+  padding-bottom: 140px;
 }
 
-.tab-menu .swiper-slide{
-  width: auto;
-  cursor: pointer;
-  color: #ADADAD;
+.facilities_section .title {
+  padding-bottom: 56px;
 }
-
-
-.tab-menu  .swiper-slide-thumb-active {
-  color: #232323;
-
-}
-
 
 
 .facilities_section .desc {
- width: 60%;
+ width: 90%;
  word-break: break-all;
-
+ text-align: center;
+ padding: 40px 0 56px 0;
+ margin: 0;
+ font-size: 1.5rem;
+ line-height: 160%;
 }
 
 
@@ -341,19 +392,72 @@ header.hover {
   
   .facilities_section .swiper-box-1 .swiper {
     height: 100%;
+
    
   }
 
   .facilities_section .swiper-pagination {
-    top:74%;
-    left: -8%;
-   
+    position: relative;
+    top:-20px;
+    left: 0;
+
   }
    
 
-  .facilities_section .content {
+  .facilities_section > .content {
     position: relative;
   }
+
+
+  .facilities_section .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .facilities_section .swiper-wrapper {
+    box-sizing: border-box;
+  }
+
+
+  .swiper-button-next,
+  .swiper-button-prev  {
+    
+    width:40px;
+    height: 40px;
+    background-size: cover;
+    margin-top: 0;
+    position: absolute;
+    top:32%;
+  }
+
+.swiper-button-next {
+  background: url(/img/swiper_next_bt.png) no-repeat;
+  right: 160px;
+  left: auto; 
+    
+  }
+
+  .swiper-button-prev {
+    background: url(/img/swiper_pre_bt.png) no-repeat;
+    left: 160px;
+    right: auto; 
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  background: var(--swiper-pagination-bullet-inactive-color,#232323);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--swiper-pagination-color,#232323);
+}
 
 
 

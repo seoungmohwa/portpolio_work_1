@@ -4,18 +4,13 @@ var swiper = new Swiper(".main_bg_swiper", {
   spaceBetween: 0,
   centeredSlides: true,
   autoplay: {
-    delay: 3500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  
   
 });
 
@@ -53,13 +48,22 @@ var swiper = new Swiper(".main_bg_swiper", {
       breakpoints: {
         // 화면의 넓이가 320px 이상일 때
         320: {
-          slidesPerView: 1.1,
-          spaceBetween: 24,
+          slidesPerView: 1,
+          spaceBetween: 50,
+          slidesPerGroup: 1,
+          centeredSlides: true,
+          navigation: {
+            nextEl: '.swiper-box-1 .swiper-button-next',
+            prevEl: '.swiper-box-1 .swiper-button-prev',
+          }
         },
         // 화면의 넓이가 800px 이상일 때
         800: {
-            slidesPerView:1.2,
-            spaceBetween:70,
+            
+            spaceBetween:60,
+            slidesPerView: 1.2,  
+            slidesPerGroup: 1,
+            centeredSlides: true,
             navigation: {
               nextEl: '.swiper-box-1 .swiper-button-next',
               prevEl: '.swiper-box-1 .swiper-button-prev',
@@ -69,6 +73,7 @@ var swiper = new Swiper(".main_bg_swiper", {
     });
   }
   SwiperBox1__init();
+
 
 
 

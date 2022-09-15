@@ -23,31 +23,37 @@
 
 
     .main_section img {
-        height: 90vh;
         object-fit: fill;
     }
     
     .main_section .main_title_section {
+        
         display: flex;
         align-items: center;
         text-align: center;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-   
+    }
+    .main_section .main_bg_swiper img {
+        width: 100%;
+    }
+
+    .main_section .main_title_section .main_title {
+        font-size: 1.5rem;
+        line-height: 120%;
+        margin-left: 0px;
     }
 
     .reservation_bt {
         font-size: 1rem;
         width: 30%;
         padding: 10px;
-        margin: 30px auto;      
+        margin: 10px auto;    
+ 
        }
     
-    .main_section .main_title_section .main_title {
-        font-size: 1.5rem;
-        line-height: 120%;
-    }
+
 
 
     /* wapper 부터 */
@@ -61,8 +67,8 @@
      }
 
      .wapper .title {
-        font-size: 1.5rem;
-        font-weight: 600;
+        font-size: 2rem;
+        text-align: left;
         padding-bottom: 10px;
      }
 
@@ -81,9 +87,54 @@
      }
      
 
+     .dining_section .content {
+        display: flex;
+        gap:10px;
+    }
+    
     .promotion_section .content .item img {
         width: 80vw;
     }
+    
+ 
+    .dining_section .title_section >.desc {
+        width: 68%;
+        /* 702px */
+        display: inline-block;
+        padding: 20px 0 28px 0;
+        margin: 0;
+        font-size: 1rem;
+      
+
+      }
+
+      .dining_section .content .item > .desc_title {
+        top:80%;
+      } 
+
+
+      .facilities_section .desc {
+        width: 96%;
+        padding: 20px 0 0 0;
+        font-size: 1rem;
+     
+
+       } 
+
+
+
+       .swiper-button-next {
+        right: 28px;
+        left: auto; 
+        top:25%;
+          
+        }
+      
+        .swiper-button-prev {
+          left: 28px;
+          right: auto; 
+          top:25%;
+      }
 
 
     footer {
