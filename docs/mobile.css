@@ -86,16 +86,6 @@
         margin-left: 0;
      }
      
-
-     .dining_section .content {
-        display: flex;
-        gap:10px;
-    }
-    
-    .promotion_section .content .item img {
-        width: 80vw;
-    }
-    
  
     .dining_section .title_section >.desc {
         width: 68%;
@@ -104,22 +94,19 @@
         padding: 20px 0 28px 0;
         margin: 0;
         font-size: 1rem;
-      
-
       }
 
-      .dining_section .content .item > .desc_title {
-        top:80%;
-      } 
-
-
+      .dining_section .content {
+        gap:0px;
+    }
+    
       .facilities_section .desc {
         width: 96%;
         padding: 20px 0 0 0;
         font-size: 1rem;
-     
-
        } 
+
+
 
 
 

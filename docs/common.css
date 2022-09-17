@@ -92,14 +92,14 @@ header.hover {
   justify-content: center;
   color: #fff;
   position: absolute;
-  top: 20vw;
+  top: 19vw;
   left: 8.333vw;
   z-index: 10;
 }
 
 
 .main_section .main_title_section .main_title {
-   font-size: 3rem;
+   font-size: 4rem;
    line-height: 100%;
    letter-spacing: 4%;
    text-align: center;
@@ -298,14 +298,14 @@ header.hover {
  }
 
 .promotion_section {
-  /* padding-bottom: 14vw; */
-  /* 200px */
+   padding-bottom: 7vw; 
+  
 
 }
 
 .promotion_section .content {
     display: flex;
-    gap:30px;
+ 
 }
 
 
@@ -318,11 +318,12 @@ header.hover {
  .dining_section{
   text-align: center;
   padding-bottom: 102px;
+  
  }
 
 .dining_section .content {
     display: flex;
-    gap:30px;
+   
 }
 
 .dining_section .title {
@@ -355,13 +356,33 @@ header.hover {
   top:90%;
   /* 416px */
   left: 4%;
-  font-size: 1.25vw;
+  font-size: 1.5rem;
   font-weight: 600;
   color:#fff;
 } 
 
 
-  
+.swiper-horizontal>.swiper-scrollbar {
+  position: relative;
+  top:-34px;
+  left: 200px;
+  border-radius: 0;
+  z-index: 50;
+  height: 3px;
+  width: 50%;
+  background-color:#fff;
+}
+
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: #232323;
+  border-radius: 0;
+  left: 0;
+  top: 0;
+}
+
 
 
 .facilities_section {
