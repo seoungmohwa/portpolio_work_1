@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/mobile.css">
     <link rel="stylesheet" href="/ham_bt.css">
     <script src="/swiper.js" defer></script>
-    <script src="/ham_bt.js" defer ></script>
+    <script src="/common.js" defer ></script>
 </head>
 <body>
     <header>
@@ -93,51 +93,69 @@
 
       ...
          </div>
-    <!-- If we need pagination -->
-         <div class="swiper-pagination mobile_view"></div>
-  
+         
+          <!-- If we need navigation buttons -->
+        <div class="main_arrow_bt  mobile_hidden">  
+           <div class="swiper-button-prev"></div>
+           <div class="swiper-button-next"></div>
+        </div>
+           
     <!-- If we need navigation buttons -->
          <!-- <div class="swiper_button  mobile_hidden"> 
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
          </div> -->
-   
+        <div class="main_swiper_bt_section mobile_hidden">
+          <div class="down_arrow"><img src="/img/main_down_arrow.png" alt="아래 화살표"></div>
+        </div>
         <div class="main_title_section">
-        <div class="main_title">
+           <div class="main_title">
             ELEGANT AND STYLISH CHARM
             <br>IN THE HEART OF SEOUL
             <span class="sub_title">도심속 편안한 휴식 포시즌스 서울</span>
             <li class="reservation_bt mobile_view"><a href="/reservation.html">RESERVATION</a></li>
+           </div>
+         
         </div>
-        </div>
+
         <div class="serch_section mobile_hidden">
-        <div class="bg_nav">    
-        </div>
-        <div class="serch_box ">
-             <div class="serch_option1">
-                <div class="t_text">RESERVATION</div>
-                <div class="option_text">ROOM</div>
+          <div class="serch_desc">
+            <div class="serch_option1">
+              <div class="t_text">RESERVATION</div>
+              <div class="option_text">ROOM</div>
             </div>
             <div class="serch_option2">
-                <div class="t_text">CHECK IN / CHECK OUT</div>
-                <div class="option_text">날짜를 선택해 주세요</div>
+              <div class="t_text">CHECK IN / CHECK OUT</div>
+              <div class="option_text">날짜를 선택해 주세요</div>
             </div>
             <div class="serch_option3">
+              <div class="serch_room">
                 <div class="t_text">ROOM</div>
                 <div class="option_text clickCount"><span>+</span> 0 <span>+</span></div>
-            </div>
-            <div class="serch_option3">
+              </div>
+              <div class="serch_adult">
                 <div class="t_text">ADULT</div>
                 <div class="option_text clickCount"><span>+</span> 0 <span>+</span></div>
-            </div>
-            <div class="serch_option3">
+              </div>
+              <div class="children">
                 <div class="t_text">CHILDREN</div>
                 <div class="option_text clickCount"><span>+</span> 0 <span>+</span></div>
+    
+              </div>
             </div>
-            <div class="serch_option4 .mobile_view">
-                <div class="option_text">SERCH</div>
+            <div class="serch_option4">
+              <div class="secrch_code">
+                <div class="t_text">PROMOTION CODE</div>
+                <div class="option_text clickCount">코드를 입력해주세요</div>
+              </div>
             </div>
-        </div>
+             <div class="serch_option5">
+           
+                <div class="option_text secrch_bt">SERCH</div>
+    
+            </div>
+    
+          </div>
         </div>
       </div>  
       <div class="wapper">
@@ -334,7 +352,7 @@
                                 </div>
                             </div>
                             </div>
-                            <div class="facilities_swiper_bt ">  
+                            <div class="facilities_swiper_bt mobile_hidden">  
                               <!-- If we need navigation buttons -->
                               <div class="swiper-button swiper-button-prev"></div>
                               <div class="swiper-button swiper-button-next"></div>

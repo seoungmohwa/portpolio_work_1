@@ -41,6 +41,7 @@ body {
     align-items: center;
     font-weight: 300;
     letter-spacing: 3%;
+    
   }
 
 
@@ -80,6 +81,10 @@ header.hover {
   }
 
 /* -------------------------------------------------메인 페이지 */
+ .main_section {
+  position: relative;
+ }
+
 .main_bg_section {
    z-index: -100;
 }
@@ -115,113 +120,89 @@ header.hover {
     
  }
 
- .main_section .serch_section {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin-top: 0px;
-    background-color: #FBFBFB;
-  }
-  
-  .main_section .serch_section .bg_nav {
-      display: flex;
-      flex-basis: 20% ; 
-  }
-  
-  
-  .main_section .serch_section .serch_box {
+/* -------------------------------------서치 박스 */
+ .serch_section {
+  height:100%;
+  background-color:#F4F4F4;  
+}
+
+.serch_section .serch_desc {
+  width:1440px;
+  margin: 0 auto;
+  padding:14px 0;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  font-family:"Noto Sans";
+}
+
+
+.serch_section .serch_desc .t_text {
+  color:#ADADAD;
+  font-weight: 600;
+  padding-bottom:3px;
+}
+
+.serch_section .serch_desc .option_text {
+  color:#565656;
+  font-size:1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+}
+
+.serch_desc .serch_option3 {
+  display:flex;
+  gap:40px;
+  text-align:center;
+}
+
+.serch_desc .serch_option3 .clickCount {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:6px;
+}
+
+.serch_desc .serch_option3 .clickCount > span {
+  display:inline-block;
+  font-size:14px;
+  color:#ADADAD;
+}
+
+.serch_desc .serch_option5 .secrch_bt{
+  color:#fff;
+  background-color:#232323; 
+  padding:20px 72px;
+}
+
+.main_swiper_bt_section {
+  width: calc(100%/1.2);
+  position: absolute;
+  bottom: 170px;
+  left: 160px;
+  z-index: 10;
+ 
+}
+
+.main_swiper_bt_section  {
+  text-align: right;
+  opacity: .8;
+}
+
+
+
+
+
+ 
+
+
+/* swiper .swiper-wrapper */
+.main_bg_section{
+  position: relative;
       width: 100%;
-      /* 1536px */
-      font-family: "Noto Sans KR";
-      font-weight: 300;
-      display: flex;
-      align-items: center;
-      gap: 20px;
+      height: calc(100vh - 100px);
   }
-  
-  .main_section .serch_section .serch_box .serch_option1 {
-     flex-basis: 10% ;
-     padding-left:32px;
-     position: relative;        
-  }
-  .main_section .serch_section .serch_box .serch_option1::after{
-      content: "";
-      background-color: #E3D2D2;
-      height: 58px;
-      width: 2px; 
-      position: absolute;
-      top:0;
-      left: 182px;    
-  }
-  
-  .main_section .serch_section .serch_box .t_text{
-      color: #ADADAD;
-      letter-spacing: 1.5%;
-     
-  }
-  
-  
-  
-  .main_section .serch_section .serch_box .option_text {
-      font-size: 1.25vw;
-      /* 24px */
-      font-weight: 400;      
-  }
-  
-  .main_section .serch_section .serch_box .serch_option2 {
-      flex-basis: 40% ;
-      padding-left: 32px;
-      position: relative;
-   }
-  
-   .main_section .serch_section .serch_box .serch_option2::after{
-      content: "";
-      background-color: #E3D2D2;
-      height: 58px;
-      width: 2px; 
-      position: absolute;
-      top:0;
-      left: 610px;    
-  }
-  
-   .main_section .serch_section .serch_box .serch_option3 {
-      flex-basis: 10% ;
-      text-align: center;
-      position: relative;
-   }
-  
-   .main_section .serch_section .serch_box .serch_option3::after{
-      content: "";
-      background-color: #E3D2D2;
-      height: 58px;
-      width: 2px; 
-      position: absolute;
-      top:0;
-      left: 150px;    
-  }
-  
-   .main_section .serch_section .serch_box .serch_option4 {
-      height: 100px;
-      flex-basis: 20% ;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #232323;
-      color: #fff;
-      
-   }
 
-   .main_section .serch_section .serch_box .clickCoun {
-    display: flex;
-    gap:10px;
-    align-items: center;
-    justify-content: center;
-   }
-
-   .main_section .serch_section .serch_box span {
-    display: inline-block;
-    font-size: 12px;    
-   }
 
  /* ------------------------------------------------content */  
  .wapper {
@@ -440,7 +421,7 @@ header.hover {
     box-sizing: border-box;
   }
 
-
+  .facilities_swiper_bt
   .swiper-button-next,
   .swiper-button-prev  {
     
@@ -452,14 +433,14 @@ header.hover {
     top:32%;
   }
 
-.swiper-button-next {
+.facilities_swiper_bt .swiper-button-next {
   background: url(/img/swiper_next_bt.png) no-repeat;
   right: 160px;
   left: auto; 
     
   }
-
-  .swiper-button-prev {
+  
+  .facilities_swiper_bt .swiper-button-prev {
     background: url(/img/swiper_pre_bt.png) no-repeat;
     left: 160px;
     right: auto; 
