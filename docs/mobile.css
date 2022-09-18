@@ -54,19 +54,12 @@
        }
 
        /* swiper .swiper-wrapper */
-.main_bg_section{
-    position: relative;
-        width: 100%;
-        height: 80%;
-    }
-    
 
 
 
     /* wapper 부터 */
-    .wapper{
-        width: 90vw;
-        margin: 0 auto;
+    .wapper .con{
+        width: 88vw;
      }
 
      .wapper img{
@@ -83,10 +76,7 @@
         margin: 4px 0 18px 0;    
     }
 
-    .wapper .desc span {
-        display: inline;
-    }
-
+  
      .wapper .bt_section {
         margin-left: 0;
      }
@@ -99,12 +89,26 @@
         padding: 20px 0 28px 0;
         margin: 0;
         font-size: 1rem;
-        
+      }
+       
+      .dining_section .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+       }
+
+       .dining_section .content .item {
+        width: calc(100%/2 - 6px);
+       }
+      
+      .dining_section .content .item::before,
+      .dining_section .content .item::after {
+        display: none;
       }
 
     
       .facilities_section .desc {
-        width: 96%;
+        width: 100%;
         padding: 20px 0 0 0;
         font-size: 1rem;
         

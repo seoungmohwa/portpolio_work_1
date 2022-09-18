@@ -6,6 +6,7 @@ body {
     font-family: "Times New Roman", "Noto Sans KR", serif;
     text-rendering: optimizeLegibility;
     -wekit-font-smoothing: antialiased;
+ 
    
    
   }
@@ -98,7 +99,8 @@ header.hover {
   color: #fff;
   position: absolute;
   top: 19vw;
-  left: 8.333vw;
+  left: 50%;
+  transform: translate(-50%, 0%);
   z-index: 10;
 }
 
@@ -220,16 +222,14 @@ header.hover {
 
 
  /* ------------------------------------------------content */  
- .wapper {
+
+ .wapper .con {
     width: 75vw;
     /* 1440px */
     margin: 0 auto;
-    overflow: hidden;
     word-break: break-all;
     line-height: 150%;
- }
-
-  .con {
+    overflow:visible;
     padding-top: 9.8vw;
     /* 140px */
   
@@ -287,10 +287,7 @@ header.hover {
  }
 
 .wapper .desc span {
-    display: flex;
-    font-family:"Noto Sans KR";
-    color: #565656;
-   
+    display: block; 
  }
 
 .promotion_section {
@@ -300,51 +297,69 @@ header.hover {
 
 
 
-
-
- .promotion_section .desc span:nth-child(2) {
-    letter-spacing: 0.045em;
- }
-
-
+/* ------------------------다이닝  */
  .dining_section{
   text-align: center;
   padding-bottom: 5.315vw;
-  border: 1px red solid;
-
  }
-
-.dining_section .content {
-    display: flex;
-    
-}
 
 
 .dining_section .title {
   padding-bottom: 56px;
 }
 
+
+
 .dining_section .title_section >.desc {
-  width:80%;
-  /* 702px */
+  width:90%;
   display: inline-block;
   padding: 40px 0 48px 0;
-  margin: 0;
   word-break: break-all;
-  text-align: center;
   font-size: 1.5rem;
   line-height: 160%;
-  
 }
+
+.dining_section .content {
+ 
+  display: flex;
+  gap: 24px;
+
+ }
+
 
 .dining_section .content .item {
-  width: 100%;
   position: relative;
+  cursor: pointer;
 }
 
-.dining_section .content img {
-  width: 96%;
+
+.dining_section .content .item:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  background-color: #353535;
+  z-index: 50;
+  opacity: .7;
 }
+
+.dining_section .content .item:hover::after {
+  content: "자세히보기";
+  font-weight: 100;
+  color: #fff;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 90;
+  padding: 12px 22px;
+  border: 1px #fff solid;
+  z-index: 100;
+}
+
+
 
 .dining_section .content .item > .desc_title {
   position: absolute;
@@ -357,32 +372,10 @@ header.hover {
 } 
 
 
-.swiper-horizontal>.swiper-scrollbar {
-  position: relative;
-  top:-34px;
-  left: 200px;
-  border-radius: 0;
-  z-index: 50;
-  height: 3px;
-  width: 50%;
-  background-color:#fff;
-}
-
-.swiper-scrollbar-drag {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background: #232323;
-  border-radius: 0;
-  left: 0;
-  top: 0;
-}
-
 
 
 .facilities_section {
   padding-bottom: 5.315vw;
-  border: 1px red solid;
 }
 
 .facilities_section .title {
@@ -391,7 +384,7 @@ header.hover {
 
 
 .facilities_section .desc {
- width: 90%;
+ width: 80%;
  word-break: break-all;
  text-align: center;
  padding: 40px 0 56px 0;
@@ -421,7 +414,7 @@ header.hover {
   }
    
 
-  .facilities_section > .content {
+  .facilities_section > .content >.main_item img {
     position: relative;
   }
 
@@ -445,7 +438,8 @@ header.hover {
     background-size: cover;
     margin-top: 0;
     position: absolute;
-    top:32%;
+    top:34%;
+  
   }
 
 .facilities_swiper_bt .swiper-button-next {

@@ -43,29 +43,6 @@ var swiper = new Swiper(".promotion_Swiper ", {
 });
 
 
-// 2. 다이닝 스와이퍼
-
-var swiper = new Swiper(".dining_Swiper ", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-    },
-    800: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    },
-    
-  },
-});
-
-
 /* 3. 편의생활 스와이퍼 */
 function SwiperBox1__init() {
   const swiper = new Swiper('.swiper-box-1 .swiper', {
@@ -89,7 +66,7 @@ function SwiperBox1__init() {
       800: {
           
           spaceBetween:60,
-          slidesPerView: 1.2,  
+          slidesPerView: 1,  
           slidesPerGroup: 1,
           centeredSlides: true,
           navigation: {
