@@ -32,7 +32,7 @@ var swiper = new Swiper(".promotion_Swiper ", {
   breakpoints: {
     320: {
       slidesPerView: 1.1,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
     800: {
       slidesPerView: 3,
@@ -55,11 +55,11 @@ var swiper = new Swiper(".dining_Swiper ", {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
     800: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 10,
     },
     
   },

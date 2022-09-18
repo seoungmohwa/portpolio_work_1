@@ -123,7 +123,7 @@ header.hover {
 /* -------------------------------------서치 박스 */
  .serch_section {
   height:100%;
-  background-color:#F4F4F4;  
+  background-color:#F6F6F6;  
 }
 
 .serch_section .serch_desc {
@@ -139,22 +139,31 @@ header.hover {
 
 .serch_section .serch_desc .t_text {
   color:#ADADAD;
-  font-weight: 600;
   padding-bottom:3px;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
 .serch_section .serch_desc .option_text {
-  color:#565656;
-  font-size:1.5rem;
-  font-weight: 500;
+  color:#353535;
+  font-size:1rem;
   letter-spacing: 0.015em;
 }
 
 .serch_desc .serch_option3 {
   display:flex;
-  gap:40px;
+  gap:30px;
   text-align:center;
+  
 }
+
+
+.serch_option2,
+.serch_option4 {
+  padding-right: 140px;
+ 
+}
+
 
 .serch_desc .serch_option3 .clickCount {
   display:flex;
@@ -175,6 +184,16 @@ header.hover {
   padding:20px 72px;
 }
 
+.serch_desc_bar {
+  margin-top: 4px;
+  width: 1px;
+  height: 40px;
+  background-color: #ADADAD;
+  opacity: .8;
+}
+ 
+
+
 .main_swiper_bt_section {
   width: calc(100%/1.2);
   position: absolute;
@@ -192,15 +211,11 @@ header.hover {
 
 
 
-
- 
-
-
 /* swiper .swiper-wrapper */
 .main_bg_section{
   position: relative;
       width: 100%;
-      height: calc(100vh - 100px);
+      height: calc(100vh - 90px);
   }
 
 
@@ -258,7 +273,7 @@ header.hover {
     font-size: 1rem;
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 8px;
+    padding-bottom: 9px;
  }
 
  .wapper .desc {
@@ -279,15 +294,11 @@ header.hover {
  }
 
 .promotion_section {
-   padding-bottom: 7vw; 
-  
+  padding-bottom: 5.315vw;
 
 }
 
-.promotion_section .content {
-    display: flex;
- 
-}
+
 
 
 
@@ -298,14 +309,16 @@ header.hover {
 
  .dining_section{
   text-align: center;
-  padding-bottom: 102px;
-  
+  padding-bottom: 5.315vw;
+  border: 1px red solid;
+
  }
 
 .dining_section .content {
     display: flex;
-   
+    
 }
+
 
 .dining_section .title {
   padding-bottom: 56px;
@@ -321,6 +334,7 @@ header.hover {
   text-align: center;
   font-size: 1.5rem;
   line-height: 160%;
+  
 }
 
 .dining_section .content .item {
@@ -334,9 +348,9 @@ header.hover {
 
 .dining_section .content .item > .desc_title {
   position: absolute;
-  top:90%;
+  top:88%;
   /* 416px */
-  left: 4%;
+  left: 8%;
   font-size: 1.5rem;
   font-weight: 600;
   color:#fff;
@@ -367,7 +381,8 @@ header.hover {
 
 
 .facilities_section {
-  padding-bottom: 140px;
+  padding-bottom: 5.315vw;
+  border: 1px red solid;
 }
 
 .facilities_section .title {

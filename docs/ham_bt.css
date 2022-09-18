@@ -1,6 +1,6 @@
 .button_container {
     position: fixed;
-    top: 2.8%;
+    top: 4%;
     right: 6%;
     height: 27px;
     width: 26px;
@@ -43,7 +43,7 @@
   
   .overlay {
     position: fixed;
-    background-color: #353535;
+    background-color: #232323;
     top: 0;
     right: 0;
     display: flex;

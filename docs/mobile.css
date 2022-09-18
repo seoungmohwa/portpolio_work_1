@@ -52,6 +52,13 @@
         margin: 10px auto;    
  
        }
+
+       /* swiper .swiper-wrapper */
+.main_bg_section{
+    position: relative;
+        width: 100%;
+        height: 80%;
+    }
     
 
 
@@ -80,8 +87,6 @@
         display: inline;
     }
 
-
-
      .wapper .bt_section {
         margin-left: 0;
      }
@@ -94,16 +99,15 @@
         padding: 20px 0 28px 0;
         margin: 0;
         font-size: 1rem;
+        
       }
 
-      .dining_section .content {
-        gap:0px;
-    }
     
       .facilities_section .desc {
         width: 96%;
         padding: 20px 0 0 0;
         font-size: 1rem;
+        
        } 
 
 
