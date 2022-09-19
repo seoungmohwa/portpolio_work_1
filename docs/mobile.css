@@ -81,6 +81,10 @@
         margin-left: 0;
      }
      
+     .dining_section::after{
+        display: none;
+   
+       }
  
     .dining_section .title_section >.desc {
         width: 68%;
@@ -100,6 +104,11 @@
        .dining_section .content .item {
         width: calc(100%/2 - 6px);
        }
+
+       .dining_section .content .item_3,
+       .dining_section .content .item_4 {
+        margin-top: -8px;
+       }
       
       .dining_section .content .item::before,
       .dining_section .content .item::after {
@@ -108,12 +117,15 @@
 
     
       .facilities_section .desc {
-        width: 100%;
+        width: 70%;
         padding: 20px 0 0 0;
         font-size: 1rem;
         
        } 
-
+       
+       .facilities_section img {
+     
+       }
 
 
 
@@ -132,7 +144,7 @@
       }
 
 
-    footer {
+      footer {
         margin-top: 10.4vw;
         height: 100%;
         background-color: #232323;
@@ -142,12 +154,18 @@
 
 
     footer .footer_mid .footer_info {
-        padding: 2px 0 6px 0;
         line-height: 150%;
-        
+        padding-top: 12px;
+        padding-bottom: 20px;        
     }
 
+    footer .footer_link_section {
+        font-size: 14px;
+    }
 
+    .f_info {
+        margin: 0;
+    }
     .f_bar {
         display: block;
         color:#232323;
@@ -157,7 +175,6 @@
     }
 
     .footer_bot {
- 
         padding: 20px 0;
         display: flex;
         flex-direction: column-reverse;
@@ -165,9 +182,6 @@
         gap:20px;
        
     }
-
-    
-
     
 
 

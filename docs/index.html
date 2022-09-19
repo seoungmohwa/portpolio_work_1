@@ -1,371 +1,340 @@
 <!DOCTYPE html>
 <html lang="KR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오 목적 가비시안</title>
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
-    <!-- 제이쿼리 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
-    <!-- 스와이퍼 -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!-- 파일링크 -->
-    <link rel="stylesheet" href="/common.css">
-    <link rel="stylesheet" href="/mobile.css">
-    <link rel="stylesheet" href="/ham_bt.css">
-    <script src="/swiper.js" defer></script>
-    <script src="/common.js" defer ></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포트폴리오 목적 가비시안</title>
+  <!-- font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500&display=swap"
+    rel="stylesheet">
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- 파일링크 -->
+  <link rel="stylesheet" href="/common.css">
+  <link rel="stylesheet" href="/mobile.css">
+  <link rel="stylesheet" href="/ham_bt.css">
+  <script src="/swiper.js" defer></script>
+  <script src="/common.js" defer></script>
 </head>
+
 <body>
-    <header>
-      <section class="top-bar">
-        <div class="logo_section"><a href="/index.html"><img src="/img/letter_logo.png" alt="포시즌스로고"></a></div>
-        <nav>  
-          <ul class="nav_link_section mobile_hidden">
-            <li>
-            <a href="/rooms_sub.html">ROOM</a>   
-            </li>
-            <li>
+  <header>
+    <section class="top-bar">
+      <div class="logo_section"><a href="/index.html"><img src="/img/letter_logo.png" alt="포시즌스로고"></a></div>
+      <nav>
+        <ul class="nav_link_section mobile_hidden">
+          <li>
+            <a href="/rooms_sub.html">ROOM</a>
+          </li>
+          <li>
             <a href="/offer_sub.html">OFFERS</a>
-            </li>
-            <li>
-             <a href="#">DINING & BAR</a>
-            </li>
-            <li><a href="#">FACILITIES</a>
-            </li>
-            <li><a href="#">CUSTOMER</a></li>
-          </ul>
-        </nav>  
-        <div class="booK_link_section mobile_hidden">
-          <ul>
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">예약확인</a></li>
-            <li class="reservation_bt"><a href="/reservation.html">RESERVATION</a></li>
-          </ul>
-        </div>  
-        <div class="mobile_menu mobile_view">
-          <div class="button_container" id="toggle">
-            <span class="top"></span>
-            <span class="middle"></span>
-            <span class="bottom"></span>
-          </div>
-          <div class="overlay" id="overlay">
-            <div class="overlay-menu">
-              <ul>
-                <li>
-                  <a href="/rooms_sub.html">ROOM</a>
-                </li>
-                <li>
-                  <a href="/offer_sub.html">OFFER</a>
-                </li>
-                <li>
-                  <a href="#">DINING & BAR</a>
-                </li>
-                <li>
-                  <a href="#">FACILITIES</a>
-                </li>
-                <li>
-                  <a href="#">CUSTOMER
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </header>
-    <section class="main_section">
-
-        <!-- Slider main container -->
-      <div class="swiper main_bg_swiper">
-       <!-- Additional required wrapper -->
-         <div class="swiper-wrapper main_bg_section">
-         <!-- Slides -->
-           <div class="swiper-slide mobile_hidden"><img src="/img/main_bg.png" alt="처음"></div>
-           <div class="swiper-slide mobile_hidden"><img src="/img/main_bg_2_2.png" alt="세번째"></div>
-           <div class="swiper-slide mobile_view"><img src="/img/main_mobile_bg1.png" alt="모바일 이미지1"></div>
-           <div class="swiper-slide mobile_view"><img src="/img/main_mobile_bg2.png" alt="모바일 이미지2"></div>
-
-      ...
-         </div>
-         
-          <!-- If we need navigation buttons -->
-        <div class="main_arrow_bt  mobile_hidden">  
-           <div class="swiper-button-prev"></div>
-           <div class="swiper-button-next"></div>
-        </div>
-           
-
-    
-        <div class="main_title_section">
-           <div class="main_title">
-            ELEGANT AND STYLISH CHARM
-            <br>IN THE HEART OF SEOUL
-            <span class="sub_title">도심속 편안한 휴식 포시즌스 서울</span>
-            <li class="reservation_bt mobile_view"><a href="/reservation.html">RESERVATION</a></li>
-           </div>
-         
-        </div>
-
-        <div class="serch_section mobile_hidden">
-          <div class="serch_desc">
-            <div class="serch_option1">
-              <div class="t_text">RESERVATION</div>
-              <div class="option_text">ROOM</div>
-            </div>
-            <span class="serch_desc_bar"></span>
-            <div class="serch_option2">
-              <div class="t_text">CHECK IN / OUT</div>
-              <div class="option_text">날짜를 선택해주세요</div>
-            </div>
-            <span class="serch_desc_bar"></span>
-            <div class="serch_option3">
-              <div class="serch_room">
-                <div class="t_text">ROOM</div>
-                <div class="option_text clickCount"><span>+</span> 0 <span>+</span></div>
-              </div>
-              <div class="serch_adult">
-                <div class="t_text">ADULT</div>
-                <div class="option_text clickCount"><span>+</span> 0 <span>+</span></div>
-              </div>
-              <div class="children">
-                <div class="t_text">CHILDREN</div>
-                <div class="option_text clickCount"><span>+</span> 0 <span>+</span></div>
-    
-              </div>
-            </div>
-            <span class="serch_desc_bar"></span>
-            <div class="serch_option4">
-              <div class="secrch_code">
-                <div class="t_text">PROMOTION CODE</div>
-                <div class="option_text clickCount">코드를 입력해주세요</div>
-              </div>
-            </div>
-             <div class="serch_option5">
-           
-                <div class="option_text secrch_bt">SERCH</div>
-    
-            </div>
-    
-          </div>
-        </div>
-      </div>  
-    
-      <div class="wapper">
-   
-        <section class="promotion_section con">
-          <div class="title_section">
-              <div class="title">PROMOTION</div>
-              <a class="bt_section mobile_hidden" href="#">MORE VIEW</a>
-          </div>
-          <div class="content">
-            <div class="swiper promotion_Swiper">
-              <div class="swiper-wrapper content">
-                <div class="swiper-slide">
-                  <div class="item item_1">
-                    <img src="/img/promotion_family.png" alt="키즈패키지 사진">
-                    <div class="desc">
-                        <div class="desc_title">Family Festive Fun</div>
-                        <span>키즈 패키지와 함께 잊지 못할 하루를 완성해보세요.</span>
-                        <span>2022.01.01 - 2022.01.01</span>
-                    </div>
-                    <div class="book_bt">
-                        <a href="#">예약하기</a>
-                    </div>
-                </div>
-               
-                </div>
-                <div class="swiper-slide ">
-                  <div class="item item_2">
-                    <img src="/img/promotion_mong.png" alt="강아지 패키지 사진">
-                    <div class="desc">
-                        <div class="desc_title">Mong-Friendly</div>
-                        <span>호텔의 품격 있는 서비스로 도심 속 펫캉스를 즐겨보세요.</span>
-                        <span>2022.01.01 - 2022.01.01</span>
-                    </div>
-                    <div class="book_bt">
-                        <a href="#">예약하기</a>
-                    </div>
-                </div>
-              
-                </div>
-                <div class="swiper-slide ">
-                 
-                  <div class="item item_3">
-                    <img src="/img/promotion_3.png" alt="조식 사진">
-                    <div class="desc">
-                        <div class="desc_title">BED AND BREAKFAST</div>
-                        <span>시그니처 포시즌스 조식으로 하루를 시작해 보세요.</span>
-                        <span>2022.01.01 - 2022.01.01</span>
-                    </div>
-                    <div class="book_bt">
-                        <a href="#">예약하기</a>
-                    </div>
-                </div>
-                  
-                </div>
-              </div>
-            </div>   
-          </div>
-      </section>
-           <!--  
-        <section class="dining_section con">
-          <div class="title_section">
-      <div class="title">DINING & BAR</div>
-    
-        <div class="swiper dining_Swiper">
-          <div class="swiper-wrapper content">
-            <div class="swiper-slide item item_1">
-                <img src="/img/dining_yuyuan.png" alt="유유안 게요리">
-                
-           
-            </div>
-            <div class="swiper-slide item item_2">
-                <img src="/img/dining_charles.png" alt="찰스 칵테일">
-            </div>
-            <div class="swiper-slide item item_3">
-             
-                <img src="/img/dining_akia.png" alt="아카리아백 스시">
-                
-              
-            </div>
-            <div class="swiper-slide item item_4">
-             
-              <img src="/img/dining_maru.png" alt="마루 녹차빙수">
-              
-            
-          </div>
-          </div>
-          <div class="swiper-scrollbar mobile_view"></div>
-        </div>
-        
-  
-  
-      <div class="desc"><span class="mobile_hidden">현지 각 지역에서 그때 그때 생산, 수확한 제철 식재료를 중요시하며 모든 고객에게 더 좋은 기억을 전합니다.</span>눈과 입이 모두 즐거운 메뉴들을 포시즌스 호텔 서울에서 만나보세요.</div>
-      <div class="book_bt">
-        <a href="#">예약하기</a>
+          </li>
+          <li>
+            <a href="#">DINING & BAR</a>
+          </li>
+          <li><a href="#">FACILITIES</a>
+          </li>
+          <li><a href="#">CUSTOMER</a></li>
+        </ul>
+      </nav>
+      <div class="booK_link_section mobile_hidden">
+        <ul>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">예약확인</a></li>
+          <li class="reservation_bt"><a href="/reservation.html">RESERVATION</a></li>
+        </ul>
       </div>
+      <div class="mobile_menu mobile_view">
+        <div class="button_container" id="toggle">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
+        <div class="overlay" id="overlay">
+          <div class="overlay-menu">
+            <ul>
+              <li>
+                <a href="/rooms_sub.html">ROOM</a>
+              </li>
+              <li>
+                <a href="/offer_sub.html">OFFER</a>
+              </li>
+              <li>
+                <a href="#">DINING & BAR</a>
+              </li>
+              <li>
+                <a href="#">FACILITIES</a>
+              </li>
+              <li>
+                <a href="#">CUSTOMER
+                </a>
+              </li>
+            </ul>
           </div>
-        </section>
-      -->
-     
+        </div>
+      </div>
+    </section>
+
+  </header>
+  <section class="main_section">
+
+    <!-- Slider main container -->
+    <div class="swiper main_bg_swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper main_bg_section">
+        <!-- Slides -->
+        <div class="swiper-slide mobile_hidden"><img src="/img/main_bg.png" alt="처음"></div>
+        <div class="swiper-slide mobile_hidden"><img src="/img/main_bg_2_2.png" alt="세번째"></div>
+        <div class="swiper-slide mobile_view"><img src="/img/main_mobile_bg1.png" alt="모바일 이미지1"></div>
+        <div class="swiper-slide mobile_view"><img src="/img/main_mobile_bg2.png" alt="모바일 이미지2"></div>
+
+        ...
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="main_arrow_bt  mobile_hidden">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+
+
+      <div class="main_title_section">
+        <div class="main_title">
+          ELEGANT AND STYLISH CHARM
+          <br>IN THE HEART OF SEOUL
+          <span class="sub_title">도심속 편안한 휴식 포시즌스 서울</span>
+          <li class="reservation_bt mobile_view"><a href="/reservation.html">RESERVATION</a></li>
+        </div>
+
+      </div>
+
+      <div class="serch_section mobile_hidden">
+        <div class="serch_desc">
+          <div class="serch_option1">
+            <div class="t_text">RESERVATION</div>
+            <div class="option_text">ROOM</div>
+          </div>
+          <span class="serch_desc_bar"></span>
+          <div class="serch_option2">
+            <div class="t_text">CHECK IN / OUT</div>
+            <div class="option_text">날짜를 선택해주세요</div>
+          </div>
+          <span class="serch_desc_bar"></span>
+          <div class="serch_option3">
+            <div class="serch_room">
+              <div class="t_text">ROOM</div>
+              <div class="option_text clickCount"><span>+</span> 0 <span>+</span></div>
+            </div>
+            <div class="serch_adult">
+              <div class="t_text">ADULT</div>
+              <div class="option_text clickCount"><span>+</span> 0 <span>+</span></div>
+            </div>
+            <div class="children">
+              <div class="t_text">CHILDREN</div>
+              <div class="option_text clickCount"><span>+</span> 0 <span>+</span></div>
+
+            </div>
+          </div>
+          <span class="serch_desc_bar"></span>
+          <div class="serch_option4">
+            <div class="secrch_code">
+              <div class="t_text">PROMOTION CODE</div>
+              <div class="option_text clickCount">코드를 입력해주세요</div>
+            </div>
+          </div>
+          <div class="serch_option5">
+
+            <div class="option_text secrch_bt">SERCH</div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="wapper">
+
+      <section class="promotion_section con">
+        <div class="title_section">
+          <div class="title">PROMOTION</div>
+          <a class="bt_section mobile_hidden" href="#">+ MORE VIEW</a>
+        </div>
+        <div class="content">
+          <div class="swiper promotion_Swiper">
+            <div class="swiper-wrapper content">
+              <div class="swiper-slide">
+                <div class="item item_1">
+                  <img src="/img/promotion_family.png" alt="키즈패키지 사진">
+                  <div class="desc">
+                    <div class="desc_title">Family Festive Fun</div>
+                    <span>키즈 패키지와 함께 잊지 못할 하루를 완성해보세요.</span>
+                    <span>2022.01.01 - 2022.01.01</span>
+                  </div>
+                  <div class="book_bt">
+                    <a href="#">예약하기</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-slide ">
+                <div class="item item_2">
+                  <img src="/img/promotion_mong.png" alt="강아지 패키지 사진">
+                  <div class="desc">
+                    <div class="desc_title">Mong-Friendly</div>
+                    <span>호텔의 품격 있는 서비스로 도심 속 펫캉스를 즐겨보세요.</span>
+                    <span>2022.01.01 - 2022.01.01</span>
+                  </div>
+                  <div class="book_bt">
+                    <a href="#">예약하기</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-slide ">
+
+                <div class="item item_3">
+                  <img src="/img/promotion_3.png" alt="조식 사진">
+                  <div class="desc">
+                    <div class="desc_title">BED AND BREAKFAST</div>
+                    <span>시그니처 포시즌스 조식으로 하루를 시작해 보세요.</span>
+                    <span>2022.01.01 - 2022.01.01</span>
+                  </div>
+                  <div class="book_bt">
+                    <a href="#">예약하기</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section class="dining_section con">
         <div class="dining_bg"></div>
         <div class="title_section">
           <div class="title">DINING & BAR</div>
-          
+
           <div class="content">
             <div class=" item item_1">
               <img src="/img/dining_yuyuan.png" alt="유유안 게요리">
-              
-         
+
+
             </div>
             <div class=" item item_2">
               <img src="/img/dining_charles.png" alt="찰스 칵테일">
             </div>
             <div class=" item item_3">
-           
+
               <img src="/img/dining_akia.png" alt="아카리아백 스시">
-              
-            
+
+
             </div>
             <div class="item item_4">
               <img src="/img/dining_maru.png" alt="마루 녹차빙수">
             </div>
           </div>
-          <div class="desc"><span class="mobile_hidden">현지 각 지역에서 그때 그때 생산, 수확한 제철 식재료를 중요시하며 모든 고객에게 더 좋은 기억을 전합니다.</span>눈과 입이 모두 즐거운 메뉴들을 포시즌스 호텔 서울에서 만나보세요.</div>
+          <div class="desc"><span class="mobile_hidden">현지 각 지역에서 그때 그때 생산, 수확한 제철 식재료를 중요시하며 모든 고객에게 더 좋은 기억을
+              전합니다.</span>눈과 입이 모두 즐거운 메뉴들을 포시즌스 호텔 서울에서 만나보세요.</div>
           <div class="book_bt">
             <a href="#">예약하기</a>
           </div>
-        </div>  
+        </div>
       </section>
 
 
-        <section class="facilities_section con">
-            <div class="title ">FACILITIES</div>
-            <div class="content">
-                <div class="main_item">
-                    <div class="img_swiper">
-                        <div class="swiper-box-1 mobile_box_1">
-                          <!--  
+      <section class="facilities_section con">
+        <div class="title ">FACILITIES</div>
+        <div class="content">
+          <div class="main_item">
+            <div class="img_swiper">
+              <div class="swiper-box-1 mobile_box_1">
+                <!--  
                           <!-- Slider main container -->
-                          <div class="swiper mobile_swiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                              <!-- Slides -->
-                              <div class="swiper-slide">
-                                <img cla src="/img/pool.png" alt="수영장">
-                                <div class="desc">
-                                    
-                                    <span class="">세 개의 레인을 갖춘 실내 수영장에서 수영을 즐겨보세요. 인접한 바이탈리티 풀과 파노라마 전망이 펼쳐지는 <br>사우나에서 주스 바의 신선한 음료와 함께 편안한 휴식을 즐겨 보세요.</span>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <img src="/img/wedding.png" alt="웨딩">
-                                <div class="desc">
-                      
-                                    <span class="">취향과 스타일에 맞는 서비스를 제공해 드리기 위해 진정한 맞춤형 서비스로 신뢰감을 더하여<br>꿈꿔온 결혼식을 실현시키기 위해 최선을 다하겠습니다.</span>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <img src="/img/yoga.png" alt="요가">
-                                <div class="desc">
-                                    <span div class="">고객의 건강한 라이프스타일을 위해 필요한 모든 서비스를 제공합니다.전문 트레이너의 지도를 받으실 수 있으며<br>유산소 운동 및 웨이 트 트레이닝 기구를 마음껏 활용하실 수 있습니다. </span>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="facilities_swiper_bt mobile_hidden">  
-                              <!-- If we need navigation buttons -->
-                              <div class="swiper-button swiper-button-prev"></div>
-                              <div class="swiper-button swiper-button-next"></div>
-                        
-                            </div>
-                      
-                     
-                          </div>
-                        </div>
+                <div class="swiper mobile_swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img cla src="/img/pool.png" alt="수영장">
+                      <div class="desc">
+
+                        <span class="">세 개의 레인을 갖춘 실내 수영장에서 수영을 즐겨보세요. 인접한 바이탈리티 풀과 파노라마 전망이 펼쳐지는 <br>사우나에서 주스 바의 신선한
+                          음료와 함께 편안한 휴식을 즐겨 보세요.</span>
+                      </div>
                     </div>
+                    <div class="swiper-slide">
+                      <img src="/img/wedding.png" alt="웨딩">
+                      <div class="desc">
+
+                        <span class="">취향과 스타일에 맞는 서비스를 제공해 드리기 위해 진정한 맞춤형 서비스로 신뢰감을 더하여<br>꿈꿔온 결혼식을 실현시키기 위해 최선을
+                          다하겠습니다.</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/yoga.png" alt="요가">
+                      <div class="desc">
+                        <span div class="">고객의 건강한 라이프스타일을 위해 필요한 모든 서비스를 제공합니다.전문 트레이너의 지도를 받으실 수 있으며<br>유산소 운동 및 웨이 트
+                          트레이닝 기구를 마음껏 활용하실 수 있습니다. </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="facilities_swiper_bt mobile_hidden">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button swiper-button-prev"></div>
+                    <div class="swiper-button swiper-button-next"></div>
+
+                  </div>
+
+
                 </div>
+              </div>
             </div>
-        </section>
-   
-      
-    </section>
-   
-    <footer>
-      <div class="content">
-        <ul class="footer_link_section">
-          <li><a href="#">법적고지</a></li>
-          <li><a href="#">개인정보취급방침</a></li>
-          <li><a href="#">쿠키환경설정</a></li>
-          <li><a href="#">접근성정책</a></li>
-         </ul>
-         <div class="footer_mid footer_cont">
-          <div class="footer_info">
-              <p class="f_info">포시즌스호텔 서울 : 서울 종로구 새문안로 97<span class="f_bar">(당주동, 우편번호 03183)</span> </p>
-              <p class="f_info">대표이사 포시즌<span class="f_bar">|</span>T. 02.0000.5000
-                <span class="f_bar">|</span>F. 02.0000.5000<span class="f_bar">|</span>E-MAIL. four@seasons.co.kr</p>
-              <p class="f_info">사업자등록번호 : 123-45-67890<span class="f_bar">|</span>통신판매신고번호 : 2002-02-0000</p>
           </div>
-          <div class="footer_bot footer_cont">
-            <div class="footer_copy">
-                Copyright © 2022 본 페이지는 상업적 목적이 아닌 개인 포트폴리용으로 제작되었습니다.
-            </div>
-            <ul class="footer_sns">
-              <li><a href="#"><img src="/img/ico_sns_insta.png" alt=""></a></li>
-              <li><a href="#"><img src="/img/ico_sns_insta.png" alt=""></a></li>
-              <li><a href="#"><img src="/img/ico_sns_insta.png" alt=""></a></li>
-            </ul>
-     
+        </div>
+      </section>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="content">
+      <ul class="footer_link_section">
+        <li><a href="#">법적고지</a></li>
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">쿠키환경설정</a></li>
+        <li><a href="#">접근성정책</a></li>
+       </ul>
+       <div class="footer_mid footer_cont">
+        <div class="footer_info">
+            <p class="f_info">포시즌스호텔 서울 : 서울 종로구 새문안로 97<span class="f_bar">(당주동, 우편번호 03183)</span> </p>
+            <p class="f_info">대표이사 포시즌<span class="f_bar">|</span>T. 02.0000.5000
+              <span class="f_bar">|</span>F. 02.0000.5000<span class="f_bar">|</span>E-MAIL. four@seasons.co.kr</p>
+            <p class="f_info">사업자등록번호 : 123-45-67890<span class="f_bar">|</span>통신판매신고번호 : 2002-02-0000</p>
+        </div>
+        <div class="footer_bot footer_cont">
+          <div class="footer_copy">
+              Copyright © 2022 본 페이지는 상업적 목적이 아닌 개인 포트폴리용으로 제작되었습니다.
           </div>
-         </div>
-      </div>
-    </footer>
+          <ul class="footer_sns">
+            <li><a href="#"><img src="/img/ico_sns_insta.png" alt=""></a></li>
+            <li><a href="#"><img src="/img/ico_sns_insta.png" alt=""></a></li>
+            <li><a href="#"><img src="/img/ico_sns_insta.png" alt=""></a></li>
+          </ul>
+   
+        </div>
+       </div>
+    </div>
+  </footer>
 
 
 
@@ -375,7 +344,6 @@
 
 
 
-  
 
 
 
@@ -384,13 +352,15 @@
 
 
 
-   
-    
- 
-  
 
-    
 
-    
+
+
+
+
+
+
+
 </body>
+
 </html>

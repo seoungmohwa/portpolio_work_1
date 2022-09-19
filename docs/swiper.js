@@ -53,7 +53,7 @@ function SwiperBox1__init() {
     breakpoints: {
       // 화면의 넓이가 320px 이상일 때
       320: {
-        slidesPerView: 1,
+        slidesPerView: 0.8,
         spaceBetween: 50,
         slidesPerGroup: 1,
         centeredSlides: true,
